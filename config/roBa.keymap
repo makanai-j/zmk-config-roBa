@@ -18,6 +18,7 @@
 #define JP_ASTERISK     DOUBLE_QUOTES     // *
 #define JP_BACKQUOTE    LEFT_BRACE        // `
 #define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_BACKSLASH    0x73              // \
 #define JP_LBRACKET     RIGHT_BRACKET     // [
 #define JP_RBRACKET     BACKSLASH         // ]
 #define JP_LPAREN       ASTERISK          // (
@@ -138,7 +139,7 @@
             bindings = <
 &trans  &kp JP_LBRACE        &kp JP_RBRACE        &trans           &trans                                &kp DOLLAR       &kp JP_AMPERSAND     &kp JP_CARET   &kp JP_PIPE    &kp PERCENT
 &trans  &kp LESS_THAN         &kp GREATER_THAN       &kp EXCLAMATION  &kp QUESTION   &trans         &trans  &kp JP_UNDERSCORE     &kp JP_TILDE          &kp JP_AT  &kp JP_PLUS  &kp MINUS
-&trans  &kp JP_LBRACKET      &kp JP_RBRACKET      &kp HASH         &kp BACKSLASH  &trans      &trans  &kp JP_QUOTE  &kp JP_DQUOTE  &kp JP_BACKQUOTE   &kp JP_ASTERISK       &kp SLASH
+&trans  &kp JP_LBRACKET      &kp JP_RBRACKET      &kp HASH         &kp JP_BACKSLASH  &trans      &trans  &kp JP_QUOTE  &kp JP_DQUOTE  &kp JP_BACKQUOTE   &kp JP_ASTERISK       &kp SLASH
 &trans  &kp JP_LPAREN  &kp JP_RPAREN  &trans           &trans         &trans         &trans  &trans                                                          &trans
             >;
         };
