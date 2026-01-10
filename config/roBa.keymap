@@ -138,10 +138,10 @@
 
         SYMBOL_MAC {
             bindings = <
-&trans  &kp LS(LBRC)  &kp LS(RBRC)  &trans        &trans                             &kp LS(POUND)  &kp LS(DLLR)   &kp LS(AMPS)   &kp LS(PIPE)  &kp LS(PRCNT)
-&trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &kp LS(UNDER)  &kp LS(TILDE)  &kp AT         &kp LS(PLUS)  &kp MINUS
-&trans  &kp LBKT      &kp RBKT      &kp PIPE      &kp BSLH       &trans      &trans  &kp LS(SQT)    &kp LS(DQT)    &kp LS(GRAVE)  &kp LS(STAR)  &kp FSLH
-&trans  &kp LS(LT)    &kp LS(GT)    &trans        &trans         &trans      &trans  &trans                                                     &trans
+&trans  &kp LS(LBRC)  &kp LS(RBRC)  &trans        &trans                             &kp LS(POUND)     &kp LS(DLLR)       &kp LS(AMPS)  &kp CARET     &kp LS(PRCNT)
+&trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &kp LS(UNDER)     &kp LS(TILDE)      &kp AT        &kp LS(PLUS)  &kp MINUS
+&trans  &kp LBKT      &kp RBKT      &kp PIPE      &kp BSLH       &trans      &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE     &kp LS(STAR)  &kp FSLH
+&trans  &kp LS(LT)    &kp LS(GT)    &trans        &trans         &trans      &trans  &trans                                                           &trans
             >;
         };
 
