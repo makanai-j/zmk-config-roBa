@@ -121,7 +121,7 @@
 &kp Q       &kp W         &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A       &kp S         &kp D             &lt 5 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z       &kp X         &kp C             &kp V         &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
-&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BACKSPACE  &lt 2 ENTER                             &kp LS(LG(S))
+&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BACKSPACE  &lt 3 ENTER                             &kp LS(LG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -138,10 +138,10 @@
 
         SYMBOL_MAC {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &kp LS(LBRC)  &kp LS(RBRC)  &trans        &trans                             &kp LS(POUND)  &kp LS(DLLR)   &kp LS(AMPS)   &kp LS(PIPE)  &kp LS(PRCNT)
+&trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(EXCL)  &kp LS(QMARK)  &trans      &trans  &kp LS(UNDER)  &kp LS(TILDE)  &kp AT         &kp LS(PLUS)  &kp MINUS
+&trans  &kp LBKT      &kp RBKT      &kp PIPE      &kp BSLH       &trans      &trans  &kp LS(SQT)    &kp LS(DQT)    &kp LS(GRAVE)  &kp LS(STAR)  &kp FSLH
+&trans  &kp LS(LT)    &kp LS(GT)    &trans        &trans         &trans      &trans  &trans                                                     &trans
             >;
         };
 
