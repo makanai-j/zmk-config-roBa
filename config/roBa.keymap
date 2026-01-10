@@ -147,10 +147,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &trans              &trans            &trans         &trans                             &trans  &trans          &mkp MCLK       &trans           &kp LS(LG(S))
-&trans      &trans              &kp LC(UP_ARROW)  &trans         &trans   &trans            &trans  &trans  &mkp MB1        &kp UP_ARROW    &mkp MB2         &trans
-&kp HOME    &kp LC(LEFT_ARROW)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp END  &kp CAPSLOCK      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans      &trans              &trans            &trans         &trans   &trans            &trans  &trans                                                   &trans
+&kp ESCAPE  &trans      &trans  &trans      &trans                            &trans  &trans          &mkp MCLK       &trans           &kp LS(LG(S))
+&trans      &kp HOME    &trans  &kp END     &trans  &trans            &trans  &trans  &mkp MB1        &kp UP_ARROW    &mkp MB2         &trans
+&trans      &kp INSERT  &trans  &kp DELETE  &trans  &kp CAPSLOCK      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans      &trans      &trans  &trans      &trans  &trans            &trans  &trans                                                   &trans
             >;
         };
 
