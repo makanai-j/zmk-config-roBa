@@ -86,7 +86,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -105,29 +105,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        MAC {
-            bindings = <
-&kp Q       &kp W         &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D             &lt 3 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z       &kp X         &kp C             &kp V         &lt 5 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
-&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BACKSPACE  &lt 2 ENTER                             &kp LS(LG(S))
-            >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
-        };
-
         WINDOWS {
             bindings = <
 &kp Q      &kp W     &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S     &kp D             &lt 3 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X     &kp C             &kp V         &lt 5 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
+&kp A      &kp S     &kp D             &lt 5 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z      &kp X     &kp C             &kp V         &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
 &kp LSHFT  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &kp LS(LG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        SYMBOL {
+        MAC {
+            bindings = <
+&kp Q       &kp W         &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D             &lt 5 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z       &kp X         &kp C             &kp V         &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
+&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BACKSPACE  &lt 2 ENTER                             &kp LS(LG(S))
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+        };
+
+        SYMBOL_WIN {
             bindings = <
 &trans  &kp JP_LBRACE    &kp JP_RBRACE     &trans           &trans                                      &kp HASH           &kp DOLLAR     &kp JP_AMPERSAND  &kp JP_CARET     &kp PERCENT
 &trans  &kp JP_LPAREN    &kp JP_RPAREN     &kp EXCLAMATION  &kp QUESTION  &trans                &trans  &kp JP_UNDERSCORE  &kp JP_TILDE   &kp JP_AT         &kp JP_PLUS      &kp MINUS
@@ -136,12 +136,12 @@
             >;
         };
 
-        FUNCTION_NUM {
+        SYMBOL_MAC {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&kp F11  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &kp N7        &kp N8        &kp N9        &trans
-&trans   &trans  &trans  &trans  &trans   &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -154,10 +154,19 @@
             >;
         };
 
+        FUNCTION_NUM {
+            bindings = <
+&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&kp F11  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &kp N7        &kp N8        &kp N9        &trans
+&trans   &trans  &trans  &trans  &trans   &trans      &trans  &trans                                            &trans
+            >;
+        };
+
         BLUETOOTH {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &tog 1        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &tog 0        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
