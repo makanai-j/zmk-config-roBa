@@ -86,7 +86,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -105,23 +105,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        WINDOWS {
+        MAC {
             bindings = <
-&kp Q      &kp W     &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S     &kp D             &lt 5 F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X     &kp C             &kp V         &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
-&kp LSHFT  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &kp LS(LG(S))
+&kp Q       &kp W         &kp E             &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D             &kp F         &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z       &kp X         &kp C             &lt 5 V       &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LEFT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        MAC {
+        WINDOWS {
             bindings = <
-&kp Q       &kp W         &kp E             &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D             &lt 5 F       &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z       &kp X         &kp C             &kp V         &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LS(LG(S))
+&kp Q      &kp W     &kp E             &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S     &kp D             &kp F         &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z      &kp X     &kp C             &lt 5 V       &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
+&kp LSHFT  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -147,7 +147,7 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &trans              &trans            &trans         &trans                             &trans  &trans          &mkp MCLK       &trans           &kp F12
+&kp ESCAPE  &trans              &trans            &trans         &trans                             &trans  &trans          &mkp MCLK       &trans           &kp LS(LG(S))
 &trans      &trans              &kp LC(UP_ARROW)  &trans         &trans   &trans            &trans  &trans  &mkp MB1        &kp UP_ARROW    &mkp MB2         &trans
 &kp HOME    &kp LC(LEFT_ARROW)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp END  &kp CAPSLOCK      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans      &trans              &trans            &trans         &trans   &trans            &trans  &trans                                                   &trans
@@ -156,17 +156,17 @@
 
         FUNCTION_NUM {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&kp F11  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &kp N7        &kp N8        &kp N9        &trans
-&trans   &trans  &trans  &trans  &trans   &trans      &trans  &trans                                            &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans  &kp N7        &kp N8        &kp N9        &trans
+&trans   &trans   &trans  &trans  &trans   &trans      &trans  &trans                                            &trans
             >;
         };
 
         BLUETOOTH {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &tog 1        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &tog 0        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
