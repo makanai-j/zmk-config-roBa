@@ -90,7 +90,7 @@
 &kp Q           &kp W     &kp E         &kp R             &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S     &kp D         &kp F             &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X     &kp C         &lt 5 V           &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
-&kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &trans
+&kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &kp LS(LG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -101,7 +101,7 @@
 &kp Q           &kp W         &kp E             &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D             &kp F         &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C             &lt 5 V       &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &trans
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LS(LG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -127,7 +127,7 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &trans      &trans  &trans      &trans                            &trans  &trans          &mkp MCLK       &trans           &kp LS(LG(S))
+&kp ESCAPE  &trans      &trans  &trans      &trans                            &trans  &trans          &mkp MCLK       &trans           &trans
 &trans      &kp HOME    &trans  &kp END     &trans  &trans            &trans  &trans  &mkp MB1        &kp UP_ARROW    &mkp MB2         &trans
 &trans      &kp INSERT  &trans  &kp DELETE  &trans  &kp CAPSLOCK      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans      &trans      &trans  &trans      &trans  &trans            &trans  &trans                                                   &trans
