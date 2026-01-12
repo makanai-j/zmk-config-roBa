@@ -88,8 +88,8 @@
         WINDOWS {
             bindings = <
 &kp Q           &kp W     &kp E         &kp R             &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S     &kp D         &kp F             &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X     &kp C         &lt 5 V           &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
+&kp A           &kp S     &kp D         &kp F             &lt 5 G      &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X     &kp C         &kp V             &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
 &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &kp LS(LG(S))
             >;
 
@@ -99,8 +99,8 @@
         MAC {
             bindings = <
 &kp Q           &kp W         &kp E             &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D             &kp F         &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X         &kp C             &lt 5 V       &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp A           &kp S         &kp D             &kp F         &lt 5 G      &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X         &kp C             &kp V         &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LS(LG(S))
             >;
 
