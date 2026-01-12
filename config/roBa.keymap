@@ -58,7 +58,7 @@
 
         tab {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <11 12>;
+            key-positions = <31 32>;
         };
     };
 
