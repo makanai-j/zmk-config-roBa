@@ -62,7 +62,7 @@
         };
     };
 
- macros {
+    macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -87,10 +87,10 @@
 
         WINDOWS {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R       &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S     &kp D         &kp F       &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z             &kp X     &kp C         &lt 5 V     &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
-&kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &kp LSHIFT  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &trans
+&kp Q           &kp W     &kp E         &kp R             &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S     &kp D         &kp F             &kp G        &mkp MCLK         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X     &kp C         &lt 5 V           &lt 6 B      &kp JP_COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp JP_EQUAL
+&kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &lt 4 SPACE  &kp TAB           &kp BSPC       &lt 2 ENTER                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -98,10 +98,10 @@
 
         MAC {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R           &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F           &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z             &kp X         &kp C         &lt 5 V         &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &trans
+&kp Q           &kp W         &kp E             &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D             &kp F         &kp G        &mkp MCLK      &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X         &kp C             &lt 5 V       &lt 6 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 4 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
